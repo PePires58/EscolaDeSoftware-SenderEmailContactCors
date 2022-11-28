@@ -16,7 +16,10 @@ jobs:
       - name: Testing
         run: cd src && npm run test
 
-      - name: create pull request
+  Pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create pull request
         run: gh pr create -B development -H main --title 'Merge development into main' --body 'Created by Github action'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
