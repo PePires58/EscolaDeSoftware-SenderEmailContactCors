@@ -20,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: [Development-lambda-workflow]
     steps:
+      - uses: actions/checkout@v2
+
       - name: Create pull request
         run: gh pr create -B development -H main --title 'Merge development into main' --body 'Created by Github action'
         env:
