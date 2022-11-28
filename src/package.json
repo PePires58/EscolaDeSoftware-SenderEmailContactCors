@@ -1,0 +1,15 @@
+{
+  "name": "send-email-cors-escoladesoftware",
+  "version": "1.0.0",
+  "description": "Send email CORS function",
+  "repository": "https://github.com/PePires58/EscolaDeSoftware-SenderEmailContactCors",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha './specs/*.spec.js'"
+  },
+  "author": "PEDRO HENRIQUE PIRES - Escola de Software",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^10.1.0"
+  }
+}
